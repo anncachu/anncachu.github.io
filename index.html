@@ -11,39 +11,94 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>Invitación a la boda de Juan y María</h1>
+            <img src="https://via.placeholder.com/800x600.jpg?text=Foto+de+fondo" alt="Foto de fondo" class="img-fluid">
+            <div class="overlay"></div>
+            <div class="header-content text-center">
+                <h1>Invitación a la boda de Juan y María</h1>
+                <h2>12 de diciembre de 2023</h2>
+                <a href="#info-boda" class="btn btn-primary btn-lg mt-3">Más información</a>
+            </div>
         </div>
     </header>
 
     <!-- Fecha y lugar de la boda -->
     <section id="info-boda">
         <div class="container">
-            <h2>Fecha y lugar de la boda</h2>
-            <p>Fecha: 12 de diciembre de 2023</p>
-            <p>Lugar: Hotel Acapulco Princess, Acapulco</p>
-            <div id="map"></div>
-        </div>
-    </section>
-
-    <!-- Fotos e imágenes de los novios -->
-    <section id="fotos-novios">
-        <div class="container">
-            <h2>Fotos de los novios</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x600.jpg?text=Mar%C3%ADa" alt=“foto de la novia”>
+                    <h2>Fecha y lugar de la boda</h2>
+                    <p>12 de diciembre de 2023</p>
+                    <p>Hotel Acapulco Princess, Acapulco</p>
+                    <div id="map"></div>
+                    <p class="mt-3">Por favor confirma tu asistencia antes del 30 de noviembre de 2023</p>
+                    <a href="#rsvp" class=“btn btn-primary mt-3”>Confirmar asistencia</a>
 </div>
 <div class=“col-md-6”>
-<img src=“https://via.placeholder.com/600x600.jpg?text=Juan” alt=“foto del novio”>
+<h2>Historia de los novios</h2>
+<div class=“timeline”>
+<div class=“timeline-item”>
+<div class=“timeline-icon”><i class=“fas fa-birthday-cake”></i></div>
+<div class=“timeline-content”>
+<h3>1993</h3>
+<p>Nacimiento de Juan</p>
+</div>
+</div>
+<div class=“timeline-item”>
+<div class=“timeline-icon”><i class=“fas fa-birthday-cake”></i></div>
+<div class=“timeline-content”>
+<h3>1995</h3>
+<p>Nacimiento de María</p>
+</div>
+</div>
+<div class=“timeline-item”>
+<div class=“timeline-icon”><i class=“fas fa-heart”></i></div>
+<div class=“timeline-content”>
+<h3>2015</h3>
+<p>Conocieron a través de Facebook</p>
+</div>
+</div>
+<div class=“timeline-item”>
+<div class=“timeline-icon”><i class=“fas fa-heart”></i></div>
+<div class=“timeline-content”>
+<h3>2016</h3>
+<p>Comenzaron a salir oficialmente</p>
+</div>
+</div>
+<div class=“timeline-item”>
+<div class=“timeline-icon”><i class=“fas fa-ring”></i></div>
+<div class=“timeline-content”>
+<h3>2022</h3>
+<p>Propuesta de matrimonio</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </section>
 
+<!-- Fotos e imágenes de los novios -->
+<section id="fotos-novios">
+    <div class="container">
+        <h2>Fotos de los novios</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/600x600.jpg?text=Mar%C3%ADa" alt="foto de la novia" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/600x600.jpg?text=Juan" alt="foto del novio" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/600x600.jpg?text=Juntos" alt="foto de los novios" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- RSVP funcional -->
 <section id="rsvp">
     <div class="container">
-        <h2>RSVP</h2>
+        <h2>Confirmar asistencia</h2>
         <form>
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -54,62 +109,36 @@
                 <select class="form-control" id="asistencia" name="asistencia" required>
                     <option value="si">Sí, asistiré</option>
                     <option value="no">No, no podré asistir</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="contacto">¿Cómo podemos contactarte?</label>
-                <input type="text" class="form-control" id="contacto" name="contacto" required>
-            </div>
-            <div class="form-group">
-                <label for="confirmacion">¿Cómo te gustaría recibir la confirmación?</label>
-                <select class="form-control" id="confirmacion" name="confirmacion" required>
-                    <option value="whatsapp">WhatsApp</option>
-                    <option value="email">Correo electrónico</option>
-                    <option value="telefono">Teléfono</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar RSVP</button>
-        </form>
-    </div>
-</section>
-
-<!-- Cronología de los novios -->
-<section id="cronologia">
-    <div class="container">
-        <h2>Cronología de los novios</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Historia de la novia</h3>
-                <ul>
-                    <li>1995: Nacimiento de María</li>
-                    <li>2015: Conocieron a través de Facebook</li>
-                    <li>2016: Comenzaron a salir oficialmente</li>
-                    <li>2022: Propuesta de matrimonio</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h3>Historia del novio</h3>
-                <ul>
-                    <li>1993: Nacimiento de Juan</li>
-                    <li>2015: Conocieron a través de Facebook</li>
-                    <li>2016: Comenzaron a salir oficialmente</li>
-                    <li>2022: Propuesta de matrimonio</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+</select>
+</div>
+<div class=“form-group”>
+<label for=“mensaje”>Mensaje:</label>
+<textarea class=“form-control” id=“mensaje” name=“mensaje”></textarea>
+</div>
+<div class=“form-group”>
+<label for=“contacto”>¿Cómo podemos contactarte?</label>
+<input type=“text” class=“form-control” id=“contacto” name=“contacto” required>
+</div>
+<div class=“form-group”>
+<label for=“confirmacion”>¿Cómo te gustaría recibir la confirmación?</label>
+<select class=“form-control” id=“confirmacion” name=“confirmacion” required>
+<option value=“whatsapp”>WhatsApp</option>
+<option value=“email”>Correo electrónico</option>
+<option value=“telefono”>Teléfono</option>
+</select>
+</div>
+<button type=“submit” class=“btn btn-primary”>Enviar RSVP</button>
+</form>
+</div>
 </section>
 
 <!-- Mesa de regalos -->
 <section id="mesa-regalos">
     <div class="container">
         <h2>Mesa de regalos</h2>
-        <p>Si deseas hacernos un regalo,puedes hacerlo a través de nuestra mesa de regalos en Amazon.</p>
-</div>
+        <p>Si deseas hacernos un regalo, puedes hacerlo a través de nuestra mesa de regalos en Amazon.</p>
+        <a href="https://www.amazon.com.mx" class="btn btn-primary" target="_blank">Ver mesa de regalos</a>
+    </div>
 </section>
 
 <!-- Footer -->
@@ -122,6 +151,7 @@
 <!-- JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/53c9ddfd58.js" crossorigin="anonymous"></script>
 <script>
     // Mapa de ubicación de la boda
     function initMap() {
