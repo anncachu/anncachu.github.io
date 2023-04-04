@@ -1,275 +1,71 @@
-/* Estilos generales */
-
-{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
+```css
 body {
-font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
-a {
-color: #fff;
-text-decoration: none;
-}
-
-ul {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-
-img {
-max-width: 100%;
-}
-
-/* Estilos para la navegación */
-nav {
-background-color: #fff;
-box-shadow: 0 0 10px rgba(0,0,0,0.2);
-display: flex;
-justify-content: space-between;
-padding: 20px;
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 1;
-}
-
-/* Estilos para el header */
 header {
-height: 400px;
-position: relative;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
 }
 
-header .overlay {
-background-color: rgba(0,0,0,0.5);
-height: 100%;
-left: 0;
-position: absolute;
-top: 0;
-width: 100%;
+h1 {
+    font-size: 42px;
+    margin: 0;
 }
 
-header .hero-content {
-color: #fff;
-display: flex;
-flex-direction: column;
-height: 100%;
-justify-content: center;
-padding: 0 20px;
-text-align: center;
+#info-boda {
+    background-color: #f9f9f9;
+    padding: 50px 0;
 }
 
-header h1 {
-font-size: 48px;
-margin-bottom: 20px;
-text-shadow: 2px 2px #000;
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-header h2 {
-font-size: 36px;
-margin-bottom: 20px;
-text-shadow: 2px 2px #000;
+#map {
+    height: 400px;
+    margin-bottom: 20px;
 }
 
-header h3 {
-font-size: 24px;
-text-shadow: 2px 2px #000;
+#fotos-novios {
+    padding: 50px 0;
 }
 
-/* Estilos para la sección de información */
-.info {
-padding: 50px;
-text-align: center;
+#rsvp {
+    background-color: #f9f9f9;
+    padding: 50px 0;
 }
 
-.info h2 {
-font-size: 36px;
-margin-bottom: 20px;
+label {
+    font-weight: bold;
 }
 
-.info p {
-font-size: 24px;
-margin-bottom: 20px;
+#cronologia {
+    padding: 50px 0;
 }
 
-.mapa {
-margin-top: 20px;
-position: relative;
-padding-bottom: 75%; /* proporción 4:3 */
-height: 0;
+#mesa-regalos {
+    background-color: #f9f9f9;
+    padding: 50px 0;
 }
 
-.mapa iframe {
-border: 0;
-height: 100%;
-left: 0;
-position: absolute;
-top: 0;
-width: 100%;
-}
-
-/* Estilos para la sección de cronología */
-.cronologia {
-background-color: #f2f2f2;
-padding: 50px;
-text-align: center;
-}
-
-.cronologia h2 {
-font-size: 36px;
-margin-bottom:20px;
-}
-
-.cronologia ul {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-top: 30px;
-}
-
-.cronologia li {
-flex-basis: 30%;
-margin: 10px;
-position: relative;
-}
-
-.cronologia li img {
-margin-bottom: 20px;
-}
-
-.cronologia li p {
-font-size: 20px;
-line-height: 1.4;
-padding: 10px;
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-background-color: rgba(0,0,0,0.5);
-color: #fff;
-}
-
-/* Estilos para la sección de mesa de regalos */
-.regalos {
-padding: 50px;
-text-align: center;
-}
-
-.regalos h2 {
-font-size: 36px;
-margin-bottom: 20px;
-}
-
-.regalos p {
-font-size: 24px;
-margin-bottom: 20px;
-}
-
-.regalos ul {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-top: 30px;
-}
-
-.regalos li {
-flex-basis: 30%;
-margin: 10px;
-position: relative;
-}
-
-.regalos li img {
-margin-bottom: 20px;
-}
-
-.regalos li p {
-font-size: 20px;
-line-height: 1.4;
-padding: 10px;
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-background-color: rgba(0,0,0,0.5);
-color: #fff;
-}
-
-/* Estilos para la sección de confirmación de asistencia */
-.rsvp {
-background-color: #f2f2f2;
-padding: 50px;
-text-align: center;
-}
-
-.rsvp h2 {
-font-size: 36px;
-margin-bottom: 20px;
-}
-
-.rsvp p {
-font-size: 24px;
-margin-bottom: 20px;
-}
-
-#rsvp-form {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-#rsvp-form label {
-font-size: 20px;
-margin-top: 20px;
-}
-
-#rsvp-form input,
-#rsvp-form textarea,
-#rsvp-form select {
-font-size: 20px;
-margin-top: 10px;
-padding: 10px;
-width: 100%;
-}
-
-#rsvp-form button {
-background-color: #4caf50;
-border: 0;
-color: #fff;
-cursor: pointer;
-font-size: 20px;
-margin-top: 20px;
-padding: 10px;
-width: 200px;
-}
-
-#rsvp-form button:hover {
-background-color: #3e8e41;
-}
-
-/* Estilos para el footer */
 footer {
-background-color: #333;
-color: #fff;
-padding: 20px;
-text-align: center;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
-footer p {
-font-size: 18px;
-margin-bottom: 10px;
-}
-
-footer a {
-color: #fff;
-font-weight: bold;
-}
-
-@media screen and (max-width: 768px) {
-.cronologia li,
-.regalos li {
-flex-basis: 100%;
-}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    #map {
+        height: 300px;
+    }
 }

@@ -1,99 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Invitación de Boda</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Invitación a la boda de Juan y María</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav>
-		<a href="#">Inicio</a>
-		<a href="#">RSVP</a>
-	</nav>
-	<header>
-		<div class="overlay"></div>
-		<div class="hero-content">
-			<h1>¡Bienvenidos a nuestra boda!</h1>
-			<h2>Los novios: Juan & María</h2>
-			<h3>28 de mayo de 2023</h3>
-		</div>
-	</header>
-	<section class="info">
-		<h2>Lugar de la boda</h2>
-		<p>La Hacienda de San Diego</p>
-		<div class="mapa">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.4664027919837!2d-99.17437638478943!3d19.35317874677836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2027e69f19745%3A0xdf8ca1e9e9bfb5b5!2sHacienda%20de%20San%20Diego%2C%20Coyoac%C3%A1n%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1654248641501!5m2!1sen!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-		</div>
-	</section>
-	<section class="cronologia">
-		<h2>Nuestra historia de amor</h2>
-		<ul>
-			<li>
-				<img src="https://images.unsplash.com/photo-1498144445188-7b4d99a4b1c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHw3fHxjb3JvbmF2aXJ1cyUyMGRlJTIwZ2FtZSUyMGZpbmFsJTIwcHJvZHVpdHxlbnwwfHx8fDE2MjYyNzYyNTk&ixlib=rb-1.2.1&q=80&w=400">
-				<p>10 de enero de 2018 - Nos conocimos en una fiesta de amigos en común.</p>
-<li>
-<img src=“https://images.unsplash.com/photo-1509637588654-4bbd23f71e84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHw1fHxjb3JvbmF2aXJ1cyUyMGRlJTIwZ2FtZSUyMGZpbmFsJTIwcHJvZHVpdHxlbnwwfHx8fDE2MjYyNzYyNTk&ixlib=rb-1.2.1&q=80&w=400”>
-<p>14 de febrero de 2019 - Juan me sorprendió con una cena romántica en casa.</p>
-</li>
-<li>
-<img src=“https://images.unsplash.com/photo-1593370626708-c54791e869a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHw4fHxjb3JvbmF2aXJ1cyUyMGRlJTIwZ2FtZSUyMGZpbmFsJTIwcHJvZHVpdHxlbnwwfHx8fDE2MjYyNzYyNTk&ixlib=rb-1.2.1&q=80&w=400”>
-<p>22 de diciembre de 2020 - Nos comprometimos en un viaje romántico a la playa.</p>
-</li>
-<li>
-<img src=“https://images.unsplash.com/photo-1515372039744-85c87e00e4d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHwxM3x8Y29yb25hdmlydXMlMjBkZSUyMGdhbWUlMjBmaW5hbCUyMHByb2R1aXR8ZW58MHx8fHwxNjI2Mjc2MjU5&ixlib=rb-1.2.1&q=80&w=400”>
-<p>28 de mayo de 2023 - Nos casamos en la Hacienda de San Diego rodeados de nuestros amigos y familiares.</p>
-</li>
-</ul>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Invitación a la boda de Juan y María</h1>
+        </div>
+    </header>
+
+    <!-- Fecha y lugar de la boda -->
+    <section id="info-boda">
+        <div class="container">
+            <h2>Fecha y lugar de la boda</h2>
+            <p>Fecha: 12 de diciembre de 2023</p>
+            <p>Lugar: Hotel Acapulco Princess, Acapulco</p>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- Fotos e imágenes de los novios -->
+    <section id="fotos-novios">
+        <div class="container">
+            <h2>Fotos de los novios</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x600.jpg?text=Mar%C3%ADa" alt=“foto de la novia”>
+</div>
+<div class=“col-md-6”>
+<img src=“https://via.placeholder.com/600x600.jpg?text=Juan” alt=“foto del novio”>
+</div>
+</div>
+</div>
 </section>
-<section class=“regalos”>
-<h2>Mesa de regalos</h2>
-<p>¡Nos encantaría que nos hicieras un regalo para comenzar nuestra vida juntos! Aquí hay algunas opciones para inspirarte.</p>
-<ul>
-<li>
-<img src="https://images.unsplash.com/photo-1553673452-41eb10c9d50a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHwxMHx8Y29yb25hdmlydXMlMjBkZSUyMGdhbWUlMjBmaW5hbCUyMHByb2R1aXR8ZW58MHx8fHwxNjI2Mjc2M
-</li>
-<li>
-<img src=“https://images.unsplash.com/photo-1598332968531-4742c64d010b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHwxMnx8Y29yb25hdmlydXMlMjBkZSUyMGdhbWUlMjBmaW5hbCUyMHByb2R1aXR8ZW58MHx8fHwxNjI2Mjc2MjU5&ixlib=rb-1.2.1&q=80&w=400”>
-<p>Juego de toallas de baño de alta calidad.</p>
-</li>
-<li>
-<img src=“https://images.unsplash.com/photo-1600947100056-4915f5c5d7e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHwxM3x8Y29yb25hdmlydXMlMjBkZSUyMGdhbWUlMjBmaW5hbCUyMHByb2R1aXR8ZW58MHx8fHwxNjI2Mjc2MjU5&ixlib=rb-1.2.1&q=80&w=400”>
-<p>Juego de sábanas de lujo para nuestra cama nueva.</p>
-</li>
-<li>
-<img src=“https://images.unsplash.com/photo-1549285001-cd9f9acbacbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHwxNXx8Y29yb25hdmlydXMlMjBkZSUyMGdhbWUlMjBmaW5hbCUyMHByb2R1aXR8ZW58MHx8fHwxNjI2Mjc2MjU5&ixlib=rb-1.2.1&q=80&w=400”>
-<p>Juego de copas de vino de cristal de alta calidad.</p>
-</li>
-<li>
-<img src=“https://images.unsplash.com/photo-1522336579044-4ffccf2b8d46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTk2NjR8MHwxfHNlYXJjaHwxOHx8Y29yb25hdmlydXMlMjBkZSUyMGdhbWUlMjBmaW5hbCUyMHByb2R1aXR8ZW58MHx8fHwxNjI2Mjc2MjU5&ixlib=rb-1.2.1&q=80&w=400”>
-<p>Botella de vino de edición limitada para celebrar nuestro primer aniversario.</p>
-</li>
-</ul>
+
+<!-- RSVP funcional -->
+<section id="rsvp">
+    <div class="container">
+        <h2>RSVP</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="asistencia">Asistencia:</label>
+                <select class="form-control" id="asistencia" name="asistencia" required>
+                    <option value="si">Sí, asistiré</option>
+                    <option value="no">No, no podré asistir</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contacto">¿Cómo podemos contactarte?</label>
+                <input type="text" class="form-control" id="contacto" name="contacto" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmacion">¿Cómo te gustaría recibir la confirmación?</label>
+                <select class="form-control" id="confirmacion" name="confirmacion" required>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="email">Correo electrónico</option>
+                    <option value="telefono">Teléfono</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar RSVP</button>
+        </form>
+    </div>
 </section>
-<section class=“rsvp”>
-<h2>Confirmación de asistencia</h2>
-<form id=“rsvp-form”>
-<label for=“nombre”>Nombre</label>
-<input type="text
-<label for="correo">Correo electrónico</label>
-		<input type="email" id="correo" name="correo" required>
-		<label for="telefono">Número de teléfono</label>
-		<input type="tel" id="telefono" name="telefono" required>
-		<label for="asistencia">¿Asistirás a nuestra boda?</label>
-		<select id="asistencia" name="asistencia" required>
-			<option value="" disabled selected>Selecciona una opción</option>
-			<option value="Si">Sí, asistiré</option>
-			<option value="No">No, no podré asistir</option>
-		</select>
-		<label for="mensaje">Mensaje adicional</label>
-		<textarea id="mensaje" name="mensaje"></textarea>
-		<button type="submit">Enviar confirmación</button>
-	</form>
+
+<!-- Cronología de los novios -->
+<section id="cronologia">
+    <div class="container">
+        <h2>Cronología de los novios</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Historia de la novia</h3>
+                <ul>
+                    <li>1995: Nacimiento de María</li>
+                    <li>2015: Conocieron a través de Facebook</li>
+                    <li>2016: Comenzaron a salir oficialmente</li>
+                    <li>2022: Propuesta de matrimonio</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Historia del novio</h3>
+                <ul>
+                    <li>1993: Nacimiento de Juan</li>
+                    <li>2015: Conocieron a través de Facebook</li>
+                    <li>2016: Comenzaron a salir oficialmente</li>
+                    <li>2022: Propuesta de matrimonio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
+
+<!-- Mesa de regalos -->
+<section id="mesa-regalos">
+    <div class="container">
+        <h2>Mesa de regalos</h2>
+        <p>Si deseas hacernos un regalo,puedes hacerlo a través de nuestra mesa de regalos en Amazon.</p>
+</div>
+</section>
+
+<!-- Footer -->
 <footer>
-	<p>© 2023 Juan y María - Todos los derechos reservados</p>
+    <div class="container">
+        <p>Invitación a la boda de Juan y María. Todos los derechos reservados.</p>
+    </div>
 </footer>
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Mapa de ubicación de la boda
+    function initMap() {
+        var uluru = {lat: 16.812707, lng: -99.833823};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=[API_KEY]&callback=initMap"></script>
 </body>
 </html>
