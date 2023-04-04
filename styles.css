@@ -1,169 +1,275 @@
-/* Estilos para la barra de navegación */
-nav {
-background-color: #fff;
-padding: 10px;
-text-align: right;
-}
-nav a {
-color: #000;
-margin-left: 10px;
-text-decoration: none;
-font-weight: bold;
-font-size: 20px;
-}
-
-/* Estilos para el encabezado */
-header {
-background-color: #f7c4d0;
-padding: 40px;
-text-align: center;
-}
-h1, h2, h3 {
-margin: 0;
-font-weight: normal;
-}
-h1 {
-font-size: 60px;
-}
-h2 {
-font-size: 40px;
-margin-top: 20px;
-}
-h3 {
-font-size: 30px;
-margin-top: 10px;
-}
-
-/* Estilos para la sección de información */
-.info {
-background-color: #fff;
-padding: 40px;
-text-align: center;
-}
-.info h2 {
-font-size: 30px;
-margin-top: 0;
-}
-.info p {
-font-size: 20px;
-margin-top: 10px;
-}
-.mapa {
-margin-top: 20px;
-}
-
-/* Estilos para la sección de cronología */
-.cronologia {
-background-color: #f7c4d0;
-padding: 40px;
-text-align: center;
-}
-.cronologia h2 {
-font-size: 30px;
-margin-top: 0;
-}
-.cronologia ul {
-list-style: none;
-padding: 0;
-margin-top: 20px;
-}
-.cronologia li {
-display: flex;
-align-items: center;
-margin-bottom: 20px;
-}
-.cronologia img {
-width: 150px;
-height: 150px;
-object-fit: cover;
-border-radius: 50%;
-margin-right: 20px;
-}
-.cronologia p {
-font-size: 20px;
-margin: 0;
-}
-
-/* Estilos para la sección de mesa de regalos */
-.regalos {
-background-color: #fff;
-padding: 40px;
-text-align: center;
-}
-.regalos h2 {
-font-size: 30px;
-margin-top: 0;
-}
-.regalos p {
-font-size: 20px;
-margin-top: 10px;
-}
-.regalos ul {
-list-style: none;
-padding: 0;
-margin-top: 20px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-.regalos li {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-right: 20px;
-margin-bottom: 20px;
-}
-.regalos img {
-width: 200px;
-height: 200px;
-object-fit: cover;
-border-radius: 10px;
-margin-bottom: 10px;
-}
-.regalos p {
-font-size: 20px;
-margin: 0;
-margin-top: 10px;
-}
-
-/* Estilos para el formulario de RSVP */
-#rsvp-form {
-background-color: #f7c4d0;
-padding: 40px;
-text-align: center;
-margin-top: 40px;
-}
-#rsvp-form h3 {
-font-size: 30px;
-margin-top: 0;
-}
-#rsvp-form label {
-display: block;
-margin-top: 20px;
-font-size: 20px;
-}
-#rsvp-form input,
-#rsvp-form select {
-font-size: 20px;
-padding: 10px;
-border-radius: 10px;
-border: none;
-margin-top: 10px;
-}
-#rsvp-form button {
-font-size: 20px;
-padding: 10px;
-border-radius: 10px;
-border: none;
-margin-top: 20px;
-background-color: #000;
-color: #fff;
-cursor: pointer;
-}
-
 /* Estilos generales */
 
 {
 box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
 font-family: Arial, sans-serif;
+}
+
+a {
+color: #fff;
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+img {
+max-width: 100%;
+}
+
+/* Estilos para la navegación */
+nav {
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+display: flex;
+justify-content: space-between;
+padding: 20px;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1;
+}
+
+/* Estilos para el header */
+header {
+height: 400px;
+position: relative;
+}
+
+header .overlay {
+background-color: rgba(0,0,0,0.5);
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
+
+header .hero-content {
+color: #fff;
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: center;
+padding: 0 20px;
+text-align: center;
+}
+
+header h1 {
+font-size: 48px;
+margin-bottom: 20px;
+text-shadow: 2px 2px #000;
+}
+
+header h2 {
+font-size: 36px;
+margin-bottom: 20px;
+text-shadow: 2px 2px #000;
+}
+
+header h3 {
+font-size: 24px;
+text-shadow: 2px 2px #000;
+}
+
+/* Estilos para la sección de información */
+.info {
+padding: 50px;
+text-align: center;
+}
+
+.info h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.info p {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.mapa {
+margin-top: 20px;
+position: relative;
+padding-bottom: 75%; /* proporción 4:3 */
+height: 0;
+}
+
+.mapa iframe {
+border: 0;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
+
+/* Estilos para la sección de cronología */
+.cronologia {
+background-color: #f2f2f2;
+padding: 50px;
+text-align: center;
+}
+
+.cronologia h2 {
+font-size: 36px;
+margin-bottom:20px;
+}
+
+.cronologia ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 30px;
+}
+
+.cronologia li {
+flex-basis: 30%;
+margin: 10px;
+position: relative;
+}
+
+.cronologia li img {
+margin-bottom: 20px;
+}
+
+.cronologia li p {
+font-size: 20px;
+line-height: 1.4;
+padding: 10px;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0,0,0,0.5);
+color: #fff;
+}
+
+/* Estilos para la sección de mesa de regalos */
+.regalos {
+padding: 50px;
+text-align: center;
+}
+
+.regalos h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.regalos p {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.regalos ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 30px;
+}
+
+.regalos li {
+flex-basis: 30%;
+margin: 10px;
+position: relative;
+}
+
+.regalos li img {
+margin-bottom: 20px;
+}
+
+.regalos li p {
+font-size: 20px;
+line-height: 1.4;
+padding: 10px;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0,0,0,0.5);
+color: #fff;
+}
+
+/* Estilos para la sección de confirmación de asistencia */
+.rsvp {
+background-color: #f2f2f2;
+padding: 50px;
+text-align: center;
+}
+
+.rsvp h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.rsvp p {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+#rsvp-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#rsvp-form label {
+font-size: 20px;
+margin-top: 20px;
+}
+
+#rsvp-form input,
+#rsvp-form textarea,
+#rsvp-form select {
+font-size: 20px;
+margin-top: 10px;
+padding: 10px;
+width: 100%;
+}
+
+#rsvp-form button {
+background-color: #4caf50;
+border: 0;
+color: #fff;
+cursor: pointer;
+font-size: 20px;
+margin-top: 20px;
+padding: 10px;
+width: 200px;
+}
+
+#rsvp-form button:hover {
+background-color: #3e8e41;
+}
+
+/* Estilos para el footer */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+footer a {
+color: #fff;
+font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+.cronologia li,
+.regalos li {
+flex-basis: 100%;
+}
 }
