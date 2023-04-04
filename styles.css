@@ -1,0 +1,169 @@
+/* Estilos para la barra de navegación */
+nav {
+background-color: #fff;
+padding: 10px;
+text-align: right;
+}
+nav a {
+color: #000;
+margin-left: 10px;
+text-decoration: none;
+font-weight: bold;
+font-size: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+background-color: #f7c4d0;
+padding: 40px;
+text-align: center;
+}
+h1, h2, h3 {
+margin: 0;
+font-weight: normal;
+}
+h1 {
+font-size: 60px;
+}
+h2 {
+font-size: 40px;
+margin-top: 20px;
+}
+h3 {
+font-size: 30px;
+margin-top: 10px;
+}
+
+/* Estilos para la sección de información */
+.info {
+background-color: #fff;
+padding: 40px;
+text-align: center;
+}
+.info h2 {
+font-size: 30px;
+margin-top: 0;
+}
+.info p {
+font-size: 20px;
+margin-top: 10px;
+}
+.mapa {
+margin-top: 20px;
+}
+
+/* Estilos para la sección de cronología */
+.cronologia {
+background-color: #f7c4d0;
+padding: 40px;
+text-align: center;
+}
+.cronologia h2 {
+font-size: 30px;
+margin-top: 0;
+}
+.cronologia ul {
+list-style: none;
+padding: 0;
+margin-top: 20px;
+}
+.cronologia li {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+.cronologia img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+margin-right: 20px;
+}
+.cronologia p {
+font-size: 20px;
+margin: 0;
+}
+
+/* Estilos para la sección de mesa de regalos */
+.regalos {
+background-color: #fff;
+padding: 40px;
+text-align: center;
+}
+.regalos h2 {
+font-size: 30px;
+margin-top: 0;
+}
+.regalos p {
+font-size: 20px;
+margin-top: 10px;
+}
+.regalos ul {
+list-style: none;
+padding: 0;
+margin-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.regalos li {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+.regalos img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+.regalos p {
+font-size: 20px;
+margin: 0;
+margin-top: 10px;
+}
+
+/* Estilos para el formulario de RSVP */
+#rsvp-form {
+background-color: #f7c4d0;
+padding: 40px;
+text-align: center;
+margin-top: 40px;
+}
+#rsvp-form h3 {
+font-size: 30px;
+margin-top: 0;
+}
+#rsvp-form label {
+display: block;
+margin-top: 20px;
+font-size: 20px;
+}
+#rsvp-form input,
+#rsvp-form select {
+font-size: 20px;
+padding: 10px;
+border-radius: 10px;
+border: none;
+margin-top: 10px;
+}
+#rsvp-form button {
+font-size: 20px;
+padding: 10px;
+border-radius: 10px;
+border: none;
+margin-top: 20px;
+background-color: #000;
+color: #fff;
+cursor: pointer;
+}
+
+/* Estilos generales */
+
+{
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}

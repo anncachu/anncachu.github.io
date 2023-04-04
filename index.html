@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invitación de Boda</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<nav>
+		<a href="#">Inicio</a>
+		<a href="#">RSVP</a>
+	</nav>
+	<header>
+		<h1>¡Bienvenidos a nuestra boda!</h1>
+		<h2>Los novios: Juan & María</h2>
+		<h3>Fecha: 28 de mayo de 2023</h3>
+	</header>
+	<section class="info">
+		<h2>Lugar de la boda</h2>
+		<p>La Hacienda de San Diego</p>
+		<div class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.4664027919837!2d-99.17437638478943!3d19.35317874677836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2027e69f19745%3A0xdf8ca1e9e9bfb5b5!2sHacienda%20de%20San%20Diego%2C%20Coyoac%C3%A1n%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1654248641501!5m2!1sen!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</section>
+	<section class="cronologia">
+		<h2>Nuestra historia de amor</h2>
+		<ul>
+			<li>
+				<img src="https://via.placeholder.com/150">
+				<p>10 de enero de 2018 - Nos conocimos en una fiesta de amigos en común.</p>
+			</li>
+			<li>
+				<img src="https://via.placeholder.com/150">
+				<p>14 de febrero de 2018 - Tuvimos nuestra primera cita en un restaurante italiano.</p>
+			</li>
+			<li>
+				<img src="https://via.placeholder.com/150">
+				<p>22 de diciembre de 2018 - Juan me pidió que fuera su novia en el mirador de la Torre Latinoamericana.</p>
+			</li>
+			<li>
+				<img src="https://via.placeholder.com/150">
+				<p>12 de octubre de 2020 - Nos fuimos de viaje a Japón y Juan me propuso matrimonio en el Templo del Dragón de Oro.</p>
+			</li>
+		</ul>
+	</section>
+	<section class="regalos">
+		<h2>Mesa de Regalos</h2>
+		<p>¡Graciaspor considerar hacernos un regalo! Aquí hay algunas opciones para inspirarte.</p>
+<ul>
+<li>
+<img src=“https://via.placeholder.com/200”>
+<p>Set de utensilios de cocina - $1,500 MXN</p>
+</li>
+<li>
+<img src=“https://via.placeholder.com/200”>
+<p>Viaje a la playa - $10,000 MXN</p>
+</li>
+<li>
+<img src=“https://via.placeholder.com/200”>
+<p>Electrodomésticos para el hogar - $5,000 MXN</p>
+</li>
+<li>
+<img src=“https://via.placeholder.com/200”>
+<p>Donación a nuestra caridad favorita - $2,000 MXN</p>
+</li>
+</ul>
+<form id=“rsvp-form”>
+<h3>Confirmar asistencia</h3>
+<label for=“nombre”>Nombre:</label>
+<input type=“text” id=“nombre” name=“nombre” required>
+<label for=“correo”>Correo electrónico o WhatsApp:</label>
+<input type=“text” id=“correo” name=“correo” required>
+<label for=“asistencia”>¿Asistirás a la boda?</label>
+<select id=“asistencia” name=“asistencia” required>
+<option value=“”>Selecciona una opción</option>
+<option value=“si”>Sí, asistiré</option>
+<option value=“no”>No, no podré asistir</option>
+</select>
+<button type=“submit”>Enviar</button>
+</form>
+</section>
+</body>
+</html>
